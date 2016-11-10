@@ -6,7 +6,7 @@ angular
 
 function HomeController() {
 
-  vm = this;
-  vm.text = 'Hello World';
-  
+  vm      = this;
+  vm.text = 'Flexbox Grid';
+
 }
