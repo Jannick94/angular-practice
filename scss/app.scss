@@ -36,7 +36,7 @@ body {
 .content {
   font-size: 16px;
   padding: 2rem 1rem;
-  width: 1170px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -93,21 +93,28 @@ body {
 
 .row {
   display: flex;
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   &.row-reverse {
     flex-direction: row-reverse;
   }
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    &.row-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
   .col {
     flex: 1;
-    background-color: #eee;
-    border-radius: 4px;
-    padding: 2rem;
-    margin: 0 2rem 0 0;
+    padding: 1rem;
 
-    &:last-child {
-      margin: 0;
+    .col-content {
+      background-color: #eee;
+      border-radius: 4px; 
+      padding: 2rem;
     }
   }
 }
