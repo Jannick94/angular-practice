@@ -5,8 +5,6 @@ angular
   HomeController.$inject = [];
 
 function HomeController() {
-
   vm      = this;
   vm.text = 'Flexbox Grid';
-
 }
