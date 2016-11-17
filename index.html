@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="dist/css/app.css">
   </head>
   <body>
-
-    <div ui-view></div>
+    
+    <div ui-view="header"></div>
+    <div ui-view="content" ng-animate="'view'"></div>
 
     <!-- angularjs -->
     <script src="bower_components/angular/angular.min.js"></script>
@@ -18,13 +19,22 @@
     <!-- ui-router -->
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
+    <!-- ng animate -->
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+
     <!-- bootstrap app -->
     <script src="app/app.js"></script>
     <script src="app/app.run.js"></script>
     <script src="app/app.config.js"></script>
 
+    <!-- header -->
+    <script src="app/header/header.controller.js"></script>
+
     <!-- home -->
     <script src="app/home/home.controller.js"></script>
+
+    <!-- skills -->
+    <script src="app/skills/skills.controller.js"></script>
 
   </body>
 </html>

@@ -1,5 +1,12 @@
 angular
-  .module('app.run', ['ui.router', 'app', 'app.home'])
+  .module('app.run', [
+    'ui.router', 
+    'ngAnimate',
+    'app', 
+    'app.header',
+    'app.home', 
+    'app.skills'
+  ])
   .run(runApp)
 
 function runApp() {
